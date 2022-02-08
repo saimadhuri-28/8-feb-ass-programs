@@ -1,0 +1,13 @@
+#include <stdio.h>
+static void recur_down(int n) 
+{
+    printf("%d\n", n);
+    if(n>1)
+        recur_down(n - 1);
+}
+
+int main( )
+{
+    recur_down(10);
+    return 0;
+}
